@@ -1,0 +1,187 @@
+/* Start Header*/
+header{
+    padding: 15px 0;
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    z-index: 1020;
+    background-color: white;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    i{
+        font-size: 20px;
+    }
+    
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            .close-menu{
+                display: none;
+            }
+            @include breakPoints(mobile){
+                .close-menu{
+                    display: block;
+                }
+            }
+            li{
+                font-size: 20px;
+                text-transform: capitalize;
+                a{
+                    color: $heading-color;
+                    transition: $transition ease-in-out;
+                    &:hover{
+                        color: $main-color;
+                        transform: scale(.9);
+                    }
+                }
+            }
+        }
+        @include breakPoints(mobile){
+            .menu{
+                // ========================continue here bitch
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                gap: 40px;
+                position: fixed;
+                top: 50%;
+                height: 60vh;
+                background-color: #0eb582;
+                max-width: 270px;
+                right: -400px;
+                left: -200%;
+                transform: translate(-50%,-50%);
+                font-weight: bold;
+                border-radius: 20px 40px;
+                transition: $transition ease-in-out;
+                li{
+                    a:hover{
+                        color: white;
+                    }
+                }
+
+            }
+        }
+        .icon,.menu-btn{
+            cursor: pointer;
+            transition: $transition;
+            color:$heading-color;
+            i{
+                font-size: 25px;
+            }
+            &:hover{
+                color:$main-color;
+            }
+        }
+        .menu-btn{
+            display: none;
+        }
+        @include breakPoints(mobile){
+            .menu-btn{
+                display: block;
+                margin-top: 2px;
+            }
+        }
+    }
+}
+
+/* End Header*/
+
+/* Start Login form*/
+.login-form{
+    position: fixed;
+    top: 0;
+    right: -700px;
+    max-width: 300px;
+    z-index: 1200;
+    min-height: 100vh;
+    background-color: white;
+    // box-shadow: 0 0 0 100vw rgb(0 0 0 / 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: $heading-color;
+    padding: 0 20px;
+    transition: $transition ease-in-out;
+    i:hover{
+        color:$main-color;
+        transform: rotate(45deg);
+    }
+    .buttons{
+        padding: 10px 0;
+        margin-bottom: 15px;
+        button{
+            border: $main-border;
+            padding: 10px 15px;
+            font-size: 18px;
+            text-transform: capitalize;
+            background-color: $bg-color;
+            color: $main-color;
+            transition: $transition ease-in-out;
+            &.active{
+                background-color: $main-color;
+                color: white;
+            }
+            &:hover{
+                background-color: $main-color;
+                color: white;
+            }
+        }
+    }
+    form{
+        padding: 15px;
+        border: $main-border;
+        h3{
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        input{
+            margin: 10px 0;
+            border: 1px solid $main-color;
+            text-transform: capitalize;
+            padding: 10px;
+            transition: $transition ease-in-out;
+        }
+        input:nth-of-type(3){
+            background-color: $bg-color;
+            color: $main-color;
+            cursor: pointer;
+        }
+        input:nth-of-type(3):hover{
+            background-color: $main-color;
+            color: white;
+        }
+        input:focus{
+            outline: none;
+        }
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        .remember{
+            display: flex;
+            align-items: center;
+            input{
+                margin-right:5px ;
+            }
+        }
+        a{
+            color: $heading-color;
+        }
+    }
+}
+/* End login form*/
+

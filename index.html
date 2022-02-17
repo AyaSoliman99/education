@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/homePage.css">
+ <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    
+    <!-- Scroll to top button -->
+    <i class="fas fa-chevron-circle-up up-icon"></i>
+     
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="logo">
+                        <i class="fas fa-lightbulb"></i>
+                        <h2>educa</h2>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="navbar">
+                        <ul class="menu">
+                            <li class="close-menu" id="close-menu"><i class="fas fa-times"></i></li>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="courses.html">courses</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                        <div class="icon" id="login-icon">
+                            <i class="fas fa-user" title="sign-in"></i>
+                        </div>
+                        <div class="menu-btn" id="menu-btn">
+                            <i class="fas fa-bars" title="menu"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start login form  -->
+    <section class="login-form">
+        <div class="close-menu" id="close-form"><i class="fas fa-times"></i></div>
+        <div class="buttons">
+            <button class="active">login</button>
+            <button>register</button>
+        </div>
+        <form >
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email">
+            <input type="password" placeholder="enter your password" >
+            <div class="flex">
+                <div class="remember">
+                    <input type="checkbox" value="remember me">
+                    <label for="remember-me">remember me</label>
+                </div>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now">
+        </form>
+    </section>
+    <!-- End login form  -->
+
+
+
+    <!-- Start Slider -->
+    <div class="slider">
+        <div class="single-banner">
+            <div class="banner-img">
+                <img src="images/home-slide-1.jpg" alt="">
+            </div>
+            <div class="banner-text">
+                <h2>the best courses you will find here</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam atque iste maiores eius eaque obcaecati</p>
+                <a href="#" class="link">get started</a>
+            </div>
+        </div>
+        <div class="single-banner">
+            <div class="banner-img">
+                <img src="images/home-slide-2.jpg" alt="">
+            </div>
+            <div class="banner-text">
+                <h2>the best courses you will find here</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam atque iste maiores eius eaque obcaecati</p>
+                <a href="#" class="link">get started</a>
+            </div>
+        </div>
+        <div class="single-banner">
+            <div class="banner-img">
+                <img src="images/home-slide-3.jpg" alt="">
+            </div>
+            <div class="banner-text">
+                <h2>the best courses you will find here</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam atque iste maiores eius eaque obcaecati</p>
+                <a href="#" class="link">get started</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider -->
+
+    <!-- Start Subjects -->
+    <section class="subject">
+        <div class="container">
+            <h2 class="heading">our popular subjects</h2>
+            <div class="boxs">
+                <div class="box">
+                    <img src="images/subject-icon-1.png" alt="">
+                    <h4>graphic design</h4>
+                    <p>12 modules</p>
+                </div>
+                <div class="box">
+                    <img src="images/subject-icon-2.png" alt="">
+                    <h4>mathemetics</h4>
+                    <p>12 modules</p>
+                </div>
+                <div class="box">
+                    <img src="images/subject-icon-3.png" alt="">
+                    <h4>teaching</h4>
+                    <p>12 modules</p>
+                </div>
+                <div class="box">
+                    <img src="images/subject-icon-4.png" alt="">
+                    <h4>development</h4>
+                    <p>12 modules</p>
+                </div>
+                <div class="box">
+                    <img src="images/subject-icon-5.png" alt="">
+                    <h4>science</h4>
+                    <p>12 modules</p>
+                </div>
+                <div class="box">
+                    <img src="images/subject-icon-6.png" alt="">
+                    <h4>engineering</h4>
+                    <p>12 modules</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Subjects -->
+
+    <!-- Start Courses -->
+    <section class="courses">
+        <div class="container">
+            <h2 class="heading">our popular courses</h2>
+            <div class="swiper">
+                <div class="course">
+                    <div class="img-content">
+                        <img src="images/course-1-1.png" alt="">
+                        <h3 >web development</h3>
+                    </div>
+                    <div class="text-contnet">
+                        <h3>web development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Tenetur amet quod esse adipisci in facilis neque repellat</p>
+                          <a href="" class="link">read more</a>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img-content">
+                        <img src="images/course-1-2.png" alt="">
+                        <h3>web development</h3>
+                    </div>
+                    <div class="text-contnet">
+                        <h3>web development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Tenetur amet quod esse adipisci in facilis neque repellat</p>
+                          <a href="" class="link">read more</a>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img-content">
+                        <img src="images/course-1-3.png" alt="">
+                        <h3>web development</h3>
+                    </div>
+                    <div class="text-contnet">
+                        <h3>web development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Tenetur amet quod esse adipisci in facilis neque repellat</p>
+                          <a href="" class="link">read more</a>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img-content">
+                        <img src="images/course-1-4.png" alt="">
+                        <h3>web development</h3>
+                    </div>
+                    <div class="text-contnet">
+                        <h3>web development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Tenetur amet quod esse adipisci in facilis neque repellat</p>
+                          <a href="" class="link">read more</a>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img-content">
+                        <img src="images/course-1-5.png" alt="">
+                        <h3>web development</h3>
+                    </div>
+                    <div class="text-contnet">
+                        <h3>web development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Tenetur amet quod esse adipisci in facilis neque repellat</p>
+                          <a href="" class="link">read more</a>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img-content">
+                        <img src="images/course-1-6.png" alt="">
+                        <h3>web development</h3>
+                    </div>
+                    <div class="text-contnet">
+                        <h3>web development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Tenetur amet quod esse adipisci in facilis neque repellat</p>
+                          <a href="" class="link">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Courses -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="part1 box">
+                        <div class="logo">
+                            <i class="fas fa-lightbulb"></i>
+                            <h2>educa</h2>
+                        </div>
+                        <p>Amet illum enim sed voluptatem  libero, optio tempore voluptati</p>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="links-box box">
+                        <h3>quick links</h3>
+                        <div class="links">
+                            <a href="index.html">home</a>
+                            <a href="about.html">about</a>
+                            <a href="courses.html">courses</a>
+                            <a href="contact.html">contact</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="links-box box">
+                        <h3>useful links</h3>
+                        <div class="links">
+                            <a href="">help center</a>
+                            <a href="">ask questions</a>
+                            <a href="">send feedback</a>
+                            <a href="">private policy</a>
+                            <a href="">terms of use</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="form-box box">
+                        <h3>newsletter</h3>
+                      <p>subscribe for last updates</p>
+                      <form action="">
+                          <input type="email" placeholder="enter your email">
+                          <input type="submit" value="subscribe" class="submit">
+                      </form>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>created by <span>aya soliman</span></p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(".slider").slick({
+            autoplay:true,
+            speed:800,
+            arrows:false,
+            // dots:true,
+            fade:true,
+        });
+        
+$('.swiper').slick({
+  infinite: true,
+  arrows:false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay:true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

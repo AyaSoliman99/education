@@ -1,0 +1,142 @@
+/* Start Slider */
+.slider{
+    position: relative;
+    img{
+        min-height:35vh ;
+    }
+    .banner-text{
+        position: absolute;
+        max-width: 40%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+        color: white;
+        h2{
+            font: {
+                size: 50px;
+                weight:normal;
+            }
+            color: white;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        p{
+            margin: 10px 0;
+        }
+        @include breakPoints(mobile){
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 13px;
+            }
+            .link{
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+        }
+    }
+    @include breakPoints(mobile){
+        .banner-text{
+            left:50%;
+            transform: translate(-50% ,-50%);
+            max-width: 80%;
+            text-align: center;
+            width: 100%;
+        }
+}
+@include breakPoints(small){
+    .banner-text{
+        max-width: 60%;
+    }
+}
+}
+/* End Slider */
+
+/* Start Subjects*/
+
+.subject{
+    padding: $padding 0;
+    .boxs{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 20px;
+        .box{
+            background-color:$bg-color ;
+            text-align: center;
+            border: $main-border;
+            padding: 10px;
+            transition: $transition ease-in-out;
+            &:hover{
+                background-color: $main-color;
+            }
+            h4{
+                color: $heading-color;
+                text-transform: capitalize;
+                font-size: 18px;
+                transition: $transition ease-in-out;
+            }
+            &:hover h4{
+                color: white;
+            }
+            p{
+                color: $paragraph-color;
+                transition: $transition ease-in-out;
+                margin:5px 0;
+            }
+            &:hover p{
+                color: white;
+            }
+        }
+    }
+}
+
+/* End Subjects*/
+/* Start Courses*/
+.courses{
+    padding: $padding 0;
+    .course{
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        background-color: $bg-color;
+        margin: 0 3px;
+        padding: 10px;
+        cursor: grab;
+        .img-content{
+            h3{
+                color: $heading-color;
+                text-transform: capitalize;
+                margin-top: 10px;
+            }
+        }
+        .text-contnet{
+            background-color: $main-color;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: -150%;
+            left: 0;
+            transition: $transition ease-in-out;
+            h3{
+                text-transform: capitalize;
+                margin-top: 15px;
+                letter-spacing: 1px;
+            }
+            p{
+                font-size: 15px;
+                margin: 10px 0;
+            }
+            .link:hover{
+                background-color: $heading-color;
+                border-color: $heading-color;
+            }
+        }
+        &:hover .text-contnet{
+            bottom: 0;
+        }
+    }
+}
+/* End Courses*/

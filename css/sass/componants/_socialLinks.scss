@@ -1,0 +1,19 @@
+.social-links{
+    display: flex;
+    a{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: $main-color;
+        margin-right:5px ;
+        &:hover{
+            background-color: $heading-color;
+        }
+    }
+    i{
+        padding: 2px;
+       font-size: 18px;
+       color: white; 
+    }
+}

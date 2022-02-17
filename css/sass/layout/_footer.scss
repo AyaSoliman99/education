@@ -1,0 +1,70 @@
+footer{
+    padding:$padding 0;
+    background-color: $bg-color;
+    .container{
+        border-bottom: 1px solid $main-color;
+    }
+        .box{
+            margin-bottom: 15px;
+        }
+    h3{
+        color: $heading-color;
+        text-transform: capitalize;
+        font-size: 20px;
+        margin-bottom:10px ;
+    }
+    a{
+        display: block;
+        margin: 12px 0;
+        color: $paragraph-color;
+        text-transform: capitalize;
+        width: fit-content;
+        &:hover{
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+    p{
+        font-size: 16px;
+        margin: 10px 0;
+        color: $paragraph-color;
+        line-height: 1.6;
+    }
+    .form-box{
+        form{
+            width: 100%;
+            input{
+                width: 100%;
+                padding: 10px 5px;
+                margin: 10px 0;
+                border: 1px solid $main-color;
+                text-transform: capitalize;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .submit{
+                background-color: $bg-color;
+                transition: $transition ease-in-out;
+                color: $main-color;
+                cursor: pointer;
+                &:hover{
+                    background-color: $main-color;
+                    color: white;
+                }
+            }
+        }
+    }
+.copyrights{
+    margin-top: 15px;
+    text-align: center;
+    p{
+        text-transform: capitalize;
+        color: $heading-color;
+        font-size: 20px;
+    }
+    span{
+        color: $main-color;
+    }
+}
+}

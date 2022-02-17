@@ -1,0 +1,19 @@
+@use "sass/helpers/vriables" as *;
+@import "sass/helpers/mixins";
+
+@import "sass/layout/grid";
+@import 'sass/componants/buttons';
+@import 'sass/componants/socialLinks';
+@import "sass/componants/logo";
+@import "sass/componants//headings";
+@import "sass/layout/header";
+@import "sass/layout/landing";
+
+
+
+// my styling of hompage will be in the next file and i will call the file here to be compiled 
+@import "sass/pages/contact";
+
+
+
+@import "sass/layout/footer";

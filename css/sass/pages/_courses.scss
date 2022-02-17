@@ -1,0 +1,79 @@
+/* Start courses Section*/
+
+.courses{
+    padding:$padding 0;
+    text-align: center;
+    .course{
+        position: relative;
+        overflow: hidden;
+        margin-top: 20px;
+        .move{
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            padding: 5px 5px;
+            background-color: white;
+            color: $heading-color;
+            text-transform: capitalize;
+            font-size: 15px;
+            z-index: 4;
+            transition: $transition ease-in-out;
+            // transform: scaleX(0);
+            transform-origin: left;
+        }
+        &:hover .move{
+            left: 0px;
+            top: 0px;
+            // transform: scaleX(1) translate(10px,10px);
+        }
+        img{
+            transition: $transition ease-in-out;
+            // overflow: hidden;
+        }
+        &:hover img{
+            transform: scale(1.1);
+        }
+        .text-content{
+            background-color: white;
+            padding: 15px;
+            position: relative;
+            top: -5px;
+            width: 100%;
+            border: $main-border;
+            text-align: center;
+            h3{
+                font-size: 24px;
+                color: $heading-color;
+                text-transform: capitalize;
+            }
+            p{
+                margin: 10px 0;
+                color: $paragraph-color;
+                line-height: 1.8;
+            }
+            .icons{
+                margin: 10px 0;
+                padding-top: 20px;
+                border-top: $main-border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $main-color;
+                span{
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+    .link{
+        background-color: $bg-color;
+    }
+    .link:hover{
+        background-color: $main-color;
+        color: white;
+    }
+    a.link:nth-last-child(1){
+        margin-top: 30px;
+    }
+}
+/* End courses Section*/

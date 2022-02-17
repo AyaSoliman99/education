@@ -1,0 +1,55 @@
+/* ==============Start buttons==============*/
+
+/* Start linkbutton*/
+.link{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: white;
+    color: $main-color;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid $main-color;
+    transition: $transition ease-in-out;
+    &:hover{
+        background-color: $main-color;
+        color: white;
+        border-color: white;
+    }
+}
+/* Start Close button*/
+.close-menu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: $transition ease-in-out;
+    i{
+        font-size: 30px;
+        cursor: pointer;
+        transition:transform $transition ease-in-out;
+        &:hover{
+            color:white;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+/*Start Scroll to top button*/
+.up-icon{
+    font-size: 50px;
+    right: -60px;
+    position: fixed;
+    bottom: 20px;
+    transition: $transition ease-in-out;
+    z-index: 1000;
+    border-radius: 50%;
+    color: $main-color;
+    cursor: pointer;
+}
+.up-icon:hover{
+    color: #198a66;
+}
+/*End Scroll to top button*/ 
+
+/* =================End buttons==================== */

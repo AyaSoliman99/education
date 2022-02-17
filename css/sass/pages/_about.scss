@@ -1,0 +1,172 @@
+/*Start About Us Section*/
+.about{
+    padding: $padding 0;
+    display: flex;
+    article{
+        padding-right: 10px;
+        h3{
+            font-size: 28px;
+            font-weight: normal;
+            text-transform: capitalize;
+            color: $heading-color;
+        }
+        p{
+            margin: 25px 0;
+            font-size: 15px;
+            color: $paragraph-color;
+            line-height: 1.8;
+        }
+        .achives{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 20px;
+            justify-content: space-between;
+            .box{
+                padding: 20px 40px;
+                text-align: center;
+                border: $main-border;
+                background-color: $bg-color;
+                img{
+                    max-width: 80%;
+                }
+                h4{
+                    margin: 10px 0;
+                    font-size: 24px;
+                    color: $heading-color;
+                }
+                span{
+                    font-size: 15px;
+                    color: $paragraph-color;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    @include breakPoints(mobile){
+        article{
+            margin-top: 20px;
+            padding: 0;
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/*End About Us Section*/
+/*Start Teachers Section*/
+.teachers{
+    padding: $padding 0;
+ cursor: grab;
+    .person{
+        transition: $transition ease-in-out;
+        margin: 0 20px;
+        overflow: hidden;
+        .img-content{
+            transition: .2s linear;
+            background-color: $bg-color;
+            position: relative;
+            overflow: hidden;
+        }
+        &:hover .img-content{
+        background-color: $main-color;
+        }
+        .social-links{
+            position: absolute;
+            bottom: -100%;
+            padding: 5px 0;
+            width: 100%;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($color: #000000, $alpha: .8);
+            transition: .2s ease-in-out;
+            a{
+                background-color:transparent;
+                padding: 0;
+            }
+            i{
+                font-size: 25px;
+                transition: $transition ease-in-out;
+                &:hover{
+                    color: $main-color;
+                }
+            }
+        }
+        .img-content:hover .social-links{
+            bottom: 0;
+        }
+        .text-content{
+            padding: 10px 0;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            h4{
+                color: $heading-color;
+                font-weight: bold;
+            }
+            span{
+                color:$paragraph-color;
+                flex: 1;
+                text-align: end;
+            }
+        }
+    }
+}
+/*End Teachers Section*/
+
+/* Start students reviews Saction*/
+.reviews{
+    padding: $padding 0;
+    cursor: grab;
+    .student-review{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 10px;
+        p{
+            padding: 15px 10px;
+            background-color: $bg-color;
+            line-height: 1.8;
+            font-size: 18px;
+            color: $paragraph-color;
+            position: relative;
+            margin-bottom: 30px;
+            border: $main-border;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background-color: $bg-color;
+                border-bottom: $main-border ;
+                border-right: $main-border ;
+                bottom: -16px;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg);
+            }
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: $transition ease-in-out;
+        }
+        h3{
+            color: $heading-color;
+            margin: 10px 0;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        i{
+            color: $main-color;
+            font-size: 15px;
+        }
+    }
+}
+/* End students reviews Saction*/

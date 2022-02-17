@@ -1,0 +1,19 @@
+.logo{
+    display: flex;
+    align-items: flex-start;
+    // cursor: pointer;
+    h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        font-weight: normal;
+        text-transform: capitalize;
+        color: $heading-color;
+        cursor: pointer;
+    }
+    i{
+        font-size: 25px;
+        color: $main-color;
+        margin-right: 5px;
+    }
+}

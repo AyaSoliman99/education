@@ -1,0 +1,165 @@
+/*<!-- Start Contact Us Section -->*/  
+.contact-Us{
+    padding: $padding 0;
+    .boxs{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+        gap: 20px;
+        .box{
+            padding: 20px;
+            text-align: center;
+            border: $main-border;
+            background-color: $bg-color;
+            span{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                line-height: 60px;
+                display: inline-block;
+                background-color: $main-color;
+                color: white;
+                font-size: 20px;
+            }
+            h3{
+                margin: 15px 0;
+                color: $heading-color;
+                font-size: 25px;
+                text-transform: capitalize;
+                font-weight: normal;
+            }
+            p{
+                color: $paragraph-color;
+            }
+        }
+    }
+}
+
+/*<!-- End Contact Us Section -->*/
+
+
+/*<!-- Start From Section -->*/ 
+.contact-form{
+    padding: $padding 0;
+    form{
+        width: 100%;
+        padding: 15px ;
+        border: $main-border;
+        input,
+        textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: $main-border;
+            transition: $transition ease-in-out;
+        }
+        input:focus,
+        textarea:focus{
+            outline: none;
+            color: white;
+            background-color: $main-color;
+        }
+        input:focus::placeholder,
+        textarea:focus::placeholder{
+            color: white;
+        }
+        textarea{
+            min-height: 140px;
+        }
+        .link{
+            width: fit-content;
+        }
+    }
+}
+
+/* <!-- End From Section -->*/
+
+
+/*Start Questions Section*/ 
+
+.Accordion{
+    padding: $padding 0;
+    .accordion-content{
+        display: flex;
+        // font-size: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  }
+  .accordion-box{
+    flex-basis: 49%;
+    margin-bottom: 20px;
+    button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        font-size: 22px;
+        text-transform: capitalize;
+        padding:10px 10px;
+        border: $main-border;
+        background-color: white;
+        transition: $transition ease-in-out;
+        cursor: pointer;
+        i{
+            color: $main-color;
+            font-size: 18px;
+            transition: .2s ease-in-out;
+        }
+        &:hover{
+            color: white;
+            background-color: $main-color;
+        }
+        &:hover i{
+            color: white;
+            // background-color: $main-color;
+        }
+        }
+        .content{
+            position: relative;
+            text-align: left;
+            border: none;
+            border-color: $main-color;
+            height: 0px;
+            overflow: hidden;
+            transition: $transition ease-in-out;
+            p{
+                padding: 10px ;
+                font-size: 15px;
+                color: $paragraph-color;
+                line-height: 1.8;
+            }
+     }
+}
+@include breakPoints(mobile){
+    .accordion-box{
+        flex-basis: 100%;
+        button{
+            font-size: 18px;
+        }
+    }
+}
+
+}
+.active-accordion{
+max-height: fit-content !important;
+    height: 200px !important;
+border: $main-border !important;
+border-top: none;
+}
+.active-i{
+    transform: rotate(180deg )!important;
+}
+/*End Questions Section*/ 
+
+/*Start Parteners Part*/ 
+.partners{
+    padding: $padding 0;
+    cursor: grab;
+    .swiper-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+}
+/*End Parteners Part*/
